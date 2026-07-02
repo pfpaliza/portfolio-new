@@ -1,4 +1,5 @@
 import { projects } from '../data/portfolio'
+import { Reveal } from './Reveal'
 import styles from './SelectedWork.module.css'
 
 export function SelectedWork() {
@@ -10,7 +11,11 @@ export function SelectedWork() {
       </div>
 
       {projects.map((project, i) => (
-        <div key={project.title} className={i === projects.length - 1 ? styles.projectLast : styles.project}>
+        <Reveal
+          key={project.title}
+          delay={i * 80}
+          className={i === projects.length - 1 ? styles.projectLast : styles.project}
+        >
           <div className={styles.projectInner}>
             <span className={styles.index}>{project.index}</span>
             <div className={styles.content}>
@@ -26,10 +31,13 @@ export function SelectedWork() {
                   </span>
                 ))}
               </div>
-              <div className={styles.shot}>{project.shotLabel}</div>
+              <div className={styles.shot}>
+                <span className={styles.shotSweep} aria-hidden="true" />
+                {project.shotLabel}
+              </div>
             </div>
           </div>
-        </div>
+        </Reveal>
       ))}
     </section>
   )

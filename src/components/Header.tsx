@@ -11,16 +11,24 @@ export function Header() {
         PPC
       </span>
       <nav className={styles.nav}>
-        <a href="#work">WORK</a>
-        <a href="#about">ABOUT</a>
-        <a href="#contact">CONTACT</a>
+        <a className={styles.navLink} href="#work">
+          WORK
+        </a>
+        <a className={styles.navLink} href="#about">
+          ABOUT
+        </a>
+        <a className={styles.navLink} href="#contact">
+          CONTACT
+        </a>
         <button
           type="button"
           className={styles.themeToggle}
           onClick={toggleTheme}
           aria-label={`Switch to ${theme === 'light' ? 'dark' : 'light'} mode`}
         >
-          {theme === 'light' ? 'DARK' : 'LIGHT'}
+          <span key={theme} className={styles.toggleLabel}>
+            {theme === 'light' ? 'DARK' : 'LIGHT'}
+          </span>
         </button>
       </nav>
     </header>

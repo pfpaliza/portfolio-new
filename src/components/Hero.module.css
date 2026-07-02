@@ -4,11 +4,22 @@
 }
 
 .eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
   font-family: var(--font-mono);
   font-size: 12px;
   letter-spacing: 0.14em;
   color: var(--color-accent);
   margin-bottom: 40px;
+}
+
+.eyebrowDot {
+  width: 7px;
+  height: 7px;
+  border-radius: 999px;
+  background: var(--color-accent);
+  animation: fp-pulse 2s ease-in-out infinite;
 }
 
 .heading {
@@ -25,7 +36,22 @@
 }
 
 .nameAccent {
-  color: var(--color-accent);
+  background-image: linear-gradient(90deg, var(--color-accent-soft), var(--color-accent), var(--color-accent-soft));
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: fp-grad 6s linear infinite;
+}
+
+.cursor {
+  display: inline-block;
+  width: 0.5ch;
+  height: 0.7em;
+  margin-left: 6px;
+  background: var(--color-accent);
+  transform: translateY(4px);
+  animation: fp-blink 1.1s step-end infinite;
 }
 
 .tagline {
@@ -54,4 +80,5 @@
   height: 4px;
   border-radius: 999px;
   background: var(--color-accent);
+  animation: fp-pulse 2s ease-in-out infinite;
 }
