@@ -1,0 +1,125 @@
+.work {
+  padding: clamp(48px, 8vw, 80px) clamp(24px, 6vw, 88px) 40px;
+  border-top: 1px solid var(--color-border);
+}
+
+.headingRow {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 56px;
+}
+
+.heading {
+  margin: 0;
+  font-family: var(--font-serif);
+  font-weight: 400;
+  font-size: clamp(28px, 4vw, 40px);
+  letter-spacing: -0.01em;
+}
+
+.range {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--color-text-muted);
+}
+
+.project {
+  padding-bottom: 52px;
+  margin-bottom: 52px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.projectLast {
+  padding-bottom: 8px;
+}
+
+.projectInner {
+  display: flex;
+  gap: 40px;
+}
+
+.index {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--color-text-muted);
+  padding-top: 8px;
+  flex-shrink: 0;
+}
+
+.content {
+  flex: 1;
+  min-width: 0;
+}
+
+.titleRow {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.title {
+  margin: 0;
+  font-family: var(--font-serif);
+  font-weight: 400;
+  font-size: clamp(24px, 3.5vw, 34px);
+  letter-spacing: -0.01em;
+}
+
+.year {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--color-text-muted);
+  white-space: nowrap;
+}
+
+.description {
+  margin: 14px 0 20px;
+  font-size: 16px;
+  line-height: 1.65;
+  color: var(--color-text-body);
+  max-width: 62ch;
+}
+
+.tags {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--color-text-muted);
+}
+
+.tag {
+  border: 1px solid var(--color-tag-border);
+  padding: 4px 10px;
+}
+
+.shot {
+  margin-top: 26px;
+  height: 280px;
+  background: repeating-linear-gradient(
+    135deg,
+    var(--color-shot-stripe-1) 0 11px,
+    var(--color-shot-stripe-2) 11px 22px
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--color-shot-text);
+  letter-spacing: 0.05em;
+  text-align: center;
+}
+
+@media (max-width: 640px) {
+  .projectInner {
+    gap: 20px;
+  }
+
+  .shot {
+    height: 180px;
+  }
+}

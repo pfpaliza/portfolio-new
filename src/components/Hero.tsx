@@ -1,0 +1,24 @@
+import styles from './Hero.module.css'
+
+export function Hero() {
+  return (
+    <section className={styles.hero}>
+      <div className={styles.eyebrow}>FULL-STACK ENGINEER</div>
+      <h1 className={styles.heading}>
+        <span className={styles.nameSoft}>Pablo</span>
+        <br />
+        <span className={styles.nameAccent}>
+          Paliza
+          <br />
+          Carre
+        </span>
+      </h1>
+      <p className={styles.tagline}>Database to pixel — software built to last.</p>
+      <div className={styles.meta}>
+        <span>SAN FRANCISCO</span>
+        <span className={styles.metaDot} />
+        <span>AVAILABLE Q3 2026</span>
+      </div>
+    </section>
+  )
+}
