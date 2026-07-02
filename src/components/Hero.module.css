@@ -44,16 +44,6 @@
   animation: fp-grad 6s linear infinite;
 }
 
-.cursor {
-  display: inline-block;
-  width: 0.5ch;
-  height: 0.7em;
-  margin-left: 6px;
-  background: var(--color-accent);
-  transform: translateY(4px);
-  animation: fp-blink 1.1s step-end infinite;
-}
-
 .tagline {
   margin: 36px auto 0;
   font-family: var(--font-serif);

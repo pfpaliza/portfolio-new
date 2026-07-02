@@ -15,7 +15,6 @@ export function Hero() {
           <br />
           Carre
         </span>
-        <span className={styles.cursor} aria-hidden="true" />
       </h1>
       <p className={styles.tagline}>Database to pixel — software built to last.</p>
       <div className={styles.meta}>
