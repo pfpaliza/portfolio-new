@@ -1,11 +1,12 @@
 import { experience } from '../data/portfolio'
+import { Reveal } from './Reveal'
 import styles from './Experience.module.css'
 
 export function Experience() {
   return (
     <section className={styles.experience}>
-      <div className={styles.label}>EXPERIENCE</div>
-      <div className={styles.list}>
+      <Reveal className={styles.label}>EXPERIENCE</Reveal>
+      <Reveal delay={80} className={styles.list}>
         {experience.map((entry, i) => (
           <div key={entry.role} className={i === experience.length - 1 ? styles.rowLast : styles.row}>
             <div>
@@ -15,7 +16,7 @@ export function Experience() {
             <span className={styles.range}>{entry.range}</span>
           </div>
         ))}
-      </div>
+      </Reveal>
     </section>
   )
 }

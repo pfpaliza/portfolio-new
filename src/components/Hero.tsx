@@ -3,7 +3,10 @@ import styles from './Hero.module.css'
 export function Hero() {
   return (
     <section className={styles.hero}>
-      <div className={styles.eyebrow}>FULL-STACK ENGINEER</div>
+      <div className={styles.eyebrow}>
+        <span className={styles.eyebrowDot} />
+        FULL-STACK ENGINEER
+      </div>
       <h1 className={styles.heading}>
         <span className={styles.nameSoft}>Pablo</span>
         <br />
