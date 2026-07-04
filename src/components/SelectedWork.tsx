@@ -25,12 +25,24 @@ export function SelectedWork() {
                 <span className={styles.year}>{project.year}</span>
               </div>
               <p className={styles.description}>{project.description}</p>
-              <div className={styles.tags}>
-                {project.tags.map((tag) => (
-                  <span key={tag} className={styles.tag}>
-                    {tag}
-                  </span>
-                ))}
+              <div className={styles.tagsRow}>
+                <div className={styles.tags}>
+                  {project.tags.map((tag) => (
+                    <span key={tag} className={styles.tag}>
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+                {project.githubHref && (
+                  <a
+                    href={project.githubHref}
+                    className={styles.githubLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    GITHUB ↗
+                  </a>
+                )}
               </div>
               {project.href && project.external ? (
                 <a

@@ -9,6 +9,8 @@ export interface Project {
   href?: string
   /** Set when href points off-site, so the link doesn't go through client-side routing. */
   external?: boolean
+  /** Link to the project's source on GitHub, shown alongside the live/demo link. */
+  githubHref?: string
 }
 
 export const projects: Project[] = [
@@ -22,6 +24,7 @@ export const projects: Project[] = [
     shotLabel: '[ VIEW THE CRM → ]',
     href: 'https://property-crm.pablopaliza.com',
     external: true,
+    githubHref: 'https://github.com/unit4216/property-crm',
   },
   {
     index: '02',
@@ -32,6 +35,7 @@ export const projects: Project[] = [
     tags: ['TYPESCRIPT', 'REACT', 'WEB AUDIO', 'CANVAS'],
     shotLabel: '[ LAUNCH THE SYNTH → ]',
     href: '/synth',
+    githubHref: 'https://github.com/unit4216/portfolio-new/tree/main/src/synth',
   },
   {
     index: '03',
