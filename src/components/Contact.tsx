@@ -17,9 +17,15 @@ export function Contact() {
           </span>
         </a>
         {contact.links.map((link) => (
-          <span key={link} className={styles.link}>
-            {link}
-          </span>
+          <a
+            key={link.label}
+            href={link.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.link}
+          >
+            {link.label}
+          </a>
         ))}
       </Reveal>
     </section>
