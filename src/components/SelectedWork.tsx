@@ -32,7 +32,18 @@ export function SelectedWork() {
                   </span>
                 ))}
               </div>
-              {project.href ? (
+              {project.href && project.external ? (
+                <a
+                  href={project.href}
+                  className={styles.shotLink}
+                  aria-label={`Open ${project.title}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span className={styles.shotSweep} aria-hidden="true" />
+                  {project.shotLabel}
+                </a>
+              ) : project.href ? (
                 <Link to={project.href} className={styles.shotLink} aria-label={`Open ${project.title}`}>
                   <span className={styles.shotSweep} aria-hidden="true" />
                   {project.shotLabel}
