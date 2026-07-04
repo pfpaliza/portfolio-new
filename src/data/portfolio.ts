@@ -5,13 +5,26 @@ export interface Project {
   description: string
   tags: string[]
   shotLabel: string
-  /** Internal route to a live subpage, if the project is playable/interactive. */
+  /** Route to a live subpage or external URL, if the project is playable/interactive. */
   href?: string
+  /** Set when href points off-site, so the link doesn't go through client-side routing. */
+  external?: boolean
 }
 
 export const projects: Project[] = [
   {
     index: '01',
+    title: 'Property CRM',
+    year: '2026',
+    description:
+      'A mini property-management CRM with full CRUD for properties, built on Next.js Server Actions and Postgres. Zod-validated writes end to end, deployed against Supabase.',
+    tags: ['NEXT.JS', 'TYPESCRIPT', 'POSTGRES', 'DRIZZLE'],
+    shotLabel: '[ VIEW THE CRM → ]',
+    href: 'https://property-crm.pablopaliza.com',
+    external: true,
+  },
+  {
+    index: '02',
     title: 'Monolith',
     year: '2026',
     description:
@@ -21,31 +34,26 @@ export const projects: Project[] = [
     href: '/synth',
   },
   {
-    index: '02',
-    title: 'Ledger',
-    year: '2024',
-    description:
-      'A double-entry payments core processing $40M/month. Rebuilt the settlement engine to be idempotent and auditable end to end.',
-    tags: ['GO', 'POSTGRES', 'KAFKA', 'GRPC'],
-    shotLabel: '[ PROJECT SHOT — LEDGER DASHBOARD ]',
-  },
-  {
     index: '03',
-    title: 'Northwind',
-    year: '2023',
+    title: 'Tiny Survival',
+    year: '2025',
     description:
-      'Real-time analytics dashboard for logistics fleets. Sub-second queries over a billion rows using a streaming materialized-view layer.',
-    tags: ['TYPESCRIPT', 'REACT', 'CLICKHOUSE', 'D3'],
-    shotLabel: '[ PROJECT SHOT — NORTHWIND ANALYTICS ]',
+      'A browser-playable survival game built in Godot and exported to HTML5.',
+    tags: ['GODOT', 'GDSCRIPT', 'HTML5'],
+    shotLabel: '[ PLAY ON ITCH.IO → ]',
+    href: 'https://pfpaliza.itch.io/tiny-survival',
+    external: true,
   },
   {
     index: '04',
-    title: 'Cascade',
-    year: '2022',
+    title: 'Cancer Detection',
+    year: '2025',
     description:
-      'An open-source design-to-code compiler. Turns component specs into typed, accessible React — 3.2k stars and counting.',
-    tags: ['RUST', 'WASM', 'AST'],
-    shotLabel: '[ PROJECT SHOT — CASCADE COMPILER ]',
+      'A convolutional neural network that classifies histopathologic scans for signs of cancer, trained on a 220k-image Kaggle dataset with Keras and TensorFlow.',
+    tags: ['PYTHON', 'TENSORFLOW', 'KERAS', 'CNN'],
+    shotLabel: '[ VIEW THE NOTEBOOK → ]',
+    href: 'https://github.com/unit4216/cancer-cnn/blob/main/cnn-cancer-detection.ipynb',
+    external: true,
   },
 ]
 
