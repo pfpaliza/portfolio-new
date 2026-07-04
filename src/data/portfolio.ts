@@ -81,6 +81,9 @@ export const toolkit: ToolkitGroup[] = [
 ]
 
 export const contact = {
-  email: 'pablo@paliza-carre.dev',
-  links: ['GITHUB', 'LINKEDIN', 'X'],
+  email: 'pf.paliza@gmail.com',
+  links: [
+    { label: 'GITHUB', href: 'https://github.com/unit4216' },
+    { label: 'LINKEDIN', href: 'https://www.linkedin.com/in/pablo-paliza-carre-029676134/' },
+  ],
 }

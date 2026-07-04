@@ -42,4 +42,10 @@
 
 .link {
   color: #a89e8d;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.link:hover {
+  color: var(--color-contact-accent);
 }
