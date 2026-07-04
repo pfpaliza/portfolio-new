@@ -82,6 +82,14 @@
   max-width: 62ch;
 }
 
+.tagsRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
 .tags {
   display: flex;
   gap: 10px;
@@ -94,6 +102,26 @@
 .tag {
   border: 1px solid var(--color-tag-border);
   padding: 4px 10px;
+}
+
+.githubLink {
+  display: inline-block;
+  flex-shrink: 0;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.05em;
+  color: var(--color-text-muted);
+  text-decoration: none;
+  border-bottom: 1px solid var(--color-tag-border);
+  padding-bottom: 2px;
+  transition:
+    color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.githubLink:hover {
+  color: var(--color-accent);
+  border-color: var(--color-accent);
 }
 
 .shot,
