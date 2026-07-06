@@ -36,7 +36,7 @@ export function Experience() {
                     className={`absolute top-[11px] left-[-24px] h-[7px] w-[7px] -translate-y-1/2 rounded-full border ${
                       j === 0
                         ? 'border-accent bg-accent'
-                        : 'border-text-muted bg-bg'
+                        : 'border-text-muted/60 bg-bg'
                     }`}
                   />
                   <span className="text-[15px] leading-[22px]">{r.role}</span>
