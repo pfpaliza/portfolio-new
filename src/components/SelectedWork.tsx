@@ -17,7 +17,6 @@ export function SelectedWork() {
     >
       <div className="mb-[56px] flex items-baseline justify-between">
         <h2 className="m-0 font-serif text-[clamp(28px,4vw,40px)] font-normal tracking-[-0.01em]">Selected work</h2>
-        <span className="font-mono text-[12px] text-text-muted">2021—2026</span>
       </div>
 
       {projects.map((project, i) => (
