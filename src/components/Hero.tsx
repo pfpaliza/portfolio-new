@@ -7,12 +7,6 @@ const nameAccent =
 export function Hero() {
   return (
     <section className="px-[clamp(24px,6vw,88px)] pt-[clamp(80px,16vh,150px)] pb-[clamp(70px,14vh,140px)] text-center">
-      <div
-        className={`mb-[40px] inline-flex translate-y-[20px] items-center gap-[10px] font-mono text-[12px] tracking-[0.14em] text-accent opacity-0 ${riseIn}`}
-      >
-        <span className="h-[7px] w-[7px] animate-pulse-dot rounded-full bg-accent" />
-        FULL-STACK ENGINEER
-      </div>
       <h1 className="m-0 font-serif text-[clamp(48px,9vw,108px)] font-normal leading-[0.94] tracking-[-0.03em]">
         <span className={`${nameLine} [animation-delay:100ms]`}>
           <span className="text-accent-soft">Pablo</span>
@@ -29,7 +23,7 @@ export function Hero() {
       <p
         className={`mx-auto mt-[36px] translate-y-[20px] font-serif text-[clamp(17px,2.4vw,24px)] italic tracking-[0.01em] text-text-muted opacity-0 ${riseIn} [animation-delay:460ms]`}
       >
-        Database to pixel — software built to last.
+        Experienced full-stack engineer.
       </p>
       <div
         className={`mt-[44px] flex translate-y-[16px] items-center justify-center gap-[20px] font-mono text-[12px] tracking-[0.06em] text-text-muted opacity-0 ${riseIn} [animation-delay:560ms]`}
