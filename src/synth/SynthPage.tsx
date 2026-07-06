@@ -179,8 +179,6 @@ export function SynthPage() {
         </Link>
         <div className="flex flex-1 justify-center gap-[10px]">
           <span>WEB SYNTHESIZER</span>
-          <span className="text-tag-border">·</span>
-          <span>WARM ANALOG MONO</span>
         </div>
         <div className="flex gap-[10px]">
           <button type="button" className={chip} onClick={() => setShowQwerty((v) => !v)} aria-pressed={showQwerty}>
@@ -203,16 +201,9 @@ export function SynthPage() {
           <div className="flex items-baseline gap-[14px]">
             <span className="inline-flex items-center gap-[9px] font-mono text-[13px] tracking-[0.14em] text-text">
               <span className="h-[7px] w-[7px] animate-led rounded-full bg-accent" />
-              MONOLITH
+              WEB SYNTH
             </span>
-            <span className="font-serif text-[16px] italic text-text-muted">analog voice</span>
-          </div>
-          <div className="flex gap-[20px] font-mono text-[11px] tracking-[0.08em] text-text-muted">
-            <span>INIT · PORTAMENTO</span>
-            <span className="text-tag-border">|</span>
-            <span>MONO</span>
-            <span className="text-tag-border">|</span>
-            <span>MIDI CH 01</span>
+            <span className="font-serif text-[16px] italic text-text-muted">subtractive synth</span>
           </div>
         </div>
 

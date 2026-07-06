@@ -28,10 +28,10 @@ export const projects: Project[] = [
   },
   {
     index: '02',
-    title: 'Monolith',
+    title: 'Web Synth',
     year: '2026',
     description:
-      'A playable web-based synthesizer — a warm analog voice built on the Web Audio API. Oscillators, filter, ADSR, LFO and FX, driven live from an oscilloscope-lit panel and your keyboard.',
+      'A playable subtractive synth built on the Web Audio API. Oscillators, filter, ADSR, LFO and FX, driven live from an oscilloscope-lit panel and your keyboard.',
     tags: ['TYPESCRIPT', 'REACT', 'WEB AUDIO', 'CANVAS'],
     shotLabel: '[ LAUNCH THE SYNTH → ]',
     href: '/synth',
