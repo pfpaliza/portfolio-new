@@ -10,7 +10,7 @@ export function Contact() {
       <Reveal className="mb-[28px] font-mono text-[12px] tracking-[0.14em] text-contact-accent">CONTACT</Reveal>
       <Reveal delay={80}>
         <h2 className="mb-[44px] max-w-[16ch] font-serif text-[clamp(34px,6vw,64px)] font-normal leading-[1.05] tracking-[-0.02em]">
-          Let&rsquo;s build something worth maintaining.
+          Get in touch.
         </h2>
       </Reveal>
       <Reveal

@@ -19,23 +19,23 @@ export const projects: Project[] = [
     title: 'Property CRM',
     year: '2026',
     description:
-      'A mini property-management CRM with full CRUD for properties, built on Next.js Server Actions and Postgres. Zod-validated writes end to end, deployed against Supabase.',
+      'A mini property-management CRM with full CRUD for properties, built on Next.js and Postgres, deployed against Supabase.',
     tags: ['NEXT.JS', 'TYPESCRIPT', 'POSTGRES', 'DRIZZLE'],
     shotLabel: '[ VIEW THE CRM → ]',
     href: 'https://property-crm.pablopaliza.com',
     external: true,
-    githubHref: 'https://github.com/unit4216/property-crm',
+    githubHref: 'https://github.com/pfpaliza/property-crm',
   },
   {
     index: '02',
-    title: 'Monolith',
+    title: 'Web Synth',
     year: '2026',
     description:
-      'A playable web-based synthesizer — a warm analog voice built on the Web Audio API. Oscillators, filter, ADSR, LFO and FX, driven live from an oscilloscope-lit panel and your keyboard.',
+      'A playable subtractive synth built on the Web Audio API. Oscillators, filter, ADSR, LFO and FX, driven live from an oscilloscope-lit panel and your keyboard.',
     tags: ['TYPESCRIPT', 'REACT', 'WEB AUDIO', 'CANVAS'],
     shotLabel: '[ LAUNCH THE SYNTH → ]',
     href: '/synth',
-    githubHref: 'https://github.com/unit4216/portfolio-new/tree/main/src/synth',
+    githubHref: 'https://github.com/pfpaliza/portfolio-new/tree/main/src/synth',
   },
   {
     index: '03',
@@ -56,21 +56,46 @@ export const projects: Project[] = [
       'A convolutional neural network that classifies histopathologic scans for signs of cancer, trained on a 220k-image Kaggle dataset with Keras and TensorFlow.',
     tags: ['PYTHON', 'TENSORFLOW', 'KERAS', 'CNN'],
     shotLabel: '[ VIEW THE NOTEBOOK → ]',
-    href: 'https://github.com/unit4216/cancer-cnn/blob/main/cnn-cancer-detection.ipynb',
+    href: 'https://github.com/pfpaliza/cancer-cnn/blob/main/cnn-cancer-detection.ipynb',
     external: true,
   },
 ]
 
-export interface ExperienceEntry {
+export interface ExperienceRole {
   role: string
-  detail: string
   range: string
 }
 
+export interface ExperienceEntry {
+  company: string
+  location: string
+  range: string
+  roles: ExperienceRole[]
+}
+
 export const experience: ExperienceEntry[] = [
-  { role: 'Staff Engineer · Vantage', detail: 'Payments platform & developer tooling', range: '2022—NOW' },
-  { role: 'Senior Engineer · Meridian', detail: 'Data infrastructure for logistics', range: '2019—2022' },
-  { role: 'Software Engineer · Bynel', detail: 'Full-stack product engineering', range: '2017—2019' },
+  {
+    company: 'Westland Real Estate Group',
+    location: 'Remote',
+    range: '2022—NOW',
+    roles: [
+      { role: 'Software Development Lead', range: '2024—NOW' },
+      { role: 'Software Developer', range: '2023—2024' },
+      { role: 'Junior Software Developer', range: '2022—2023' },
+    ],
+  },
+  {
+    company: 'Synergy Associates',
+    location: 'Los Angeles',
+    range: '2021—2022',
+    roles: [{ role: 'IT Engineer', range: '2021—2022' }],
+  },
+  {
+    company: 'Paliza Consulting',
+    location: 'Remote',
+    range: '2020—2025',
+    roles: [{ role: 'Software Developer (Part-time)', range: '2020—2025' }],
+  },
 ]
 
 export interface ToolkitGroup {
@@ -79,15 +104,15 @@ export interface ToolkitGroup {
 }
 
 export const toolkit: ToolkitGroup[] = [
-  { label: 'LANGUAGES', items: ['Go', 'TypeScript', 'Rust', 'Python', 'SQL'] },
-  { label: 'FRAMEWORKS', items: ['React', 'Next.js', 'Node', 'gRPC', 'GraphQL'] },
-  { label: 'INFRA', items: ['Postgres', 'Kafka', 'Kubernetes', 'Terraform', 'AWS'] },
+  { label: 'LANGUAGES', items: ['TypeScript', 'JavaScript', 'Python', 'SQL', 'Bash'] },
+  { label: 'FRAMEWORKS', items: ['React', 'Next.js', 'Node.js', 'Express', 'Tailwind CSS'] },
+  { label: 'CLOUD & DATA', items: ['GCP', 'Cloud Run', 'BigQuery', 'PostgreSQL', 'Pub/Sub'] },
 ]
 
 export const contact = {
   email: 'pf.paliza@gmail.com',
   links: [
-    { label: 'GITHUB', href: 'https://github.com/unit4216' },
+    { label: 'GITHUB', href: 'https://github.com/pfpaliza' },
     { label: 'LINKEDIN', href: 'https://www.linkedin.com/in/pablo-paliza-carre-029676134/' },
   ],
 }
