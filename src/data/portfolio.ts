@@ -92,9 +92,9 @@ export const experience: ExperienceEntry[] = [
   },
   {
     company: 'Paliza Consulting',
-    location: 'Part-time',
+    location: 'Remote',
     range: '2020—2025',
-    roles: [{ role: 'Software Developer', range: '2020—2025' }],
+    roles: [{ role: 'Software Developer (Part-time)', range: '2020—2025' }],
   },
 ]
 
