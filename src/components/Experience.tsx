@@ -33,13 +33,13 @@ export function Experience() {
                 >
                   <span
                     aria-hidden="true"
-                    className={`absolute top-[0.55em] left-[-24px] h-[7px] w-[7px] -translate-y-1/2 rounded-full border ${
+                    className={`absolute top-[11px] left-[-24px] h-[7px] w-[7px] -translate-y-1/2 rounded-full border ${
                       j === 0
                         ? 'border-accent bg-accent'
                         : 'border-text-muted bg-bg'
                     }`}
                   />
-                  <span className="text-[15px]">{r.role}</span>
+                  <span className="text-[15px] leading-[22px]">{r.role}</span>
                   {entry.roles.length > 1 && (
                     <span className="whitespace-nowrap font-mono text-[12px] text-text-muted">
                       {r.range}
