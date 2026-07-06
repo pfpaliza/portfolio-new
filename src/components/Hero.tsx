@@ -34,9 +34,7 @@ export function Hero() {
       <div
         className={`mt-[44px] flex translate-y-[16px] items-center justify-center gap-[20px] font-mono text-[12px] tracking-[0.06em] text-text-muted opacity-0 ${riseIn} [animation-delay:560ms]`}
       >
-        <span>BOSTON</span>
-        <span className="h-[4px] w-[4px] animate-pulse-dot rounded-full bg-accent" />
-        <span>AVAILABLE Q3 2026</span>
+        <span>BOSTON, MA</span>
       </div>
       <div className="mt-[40px]">
         <a
